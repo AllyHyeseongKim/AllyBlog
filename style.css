@@ -1,0 +1,84 @@
+@media (min-width: 992px) {
+    .container {
+        width: 850px;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top: 4px;
+}
+
+.title-main {
+    font-weight: bold;
+}
+
+.header-main {
+    font-weight: bold;
+}
+
+.text-detail {
+    color: darkgray;
+}
+
+.text-span {
+    display: inline;
+    color: darkgray;
+}
+
+.body-title {
+    font-weight: bold;
+}
+
+.color-main {
+    color: palevioletred;
+}
+
+.color-sub {
+    color: #835e6a;
+}
+
+.color-content {
+    color: dimgrey;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.gpa {
+    display: inline;
+}
+
+.gpa-span {
+    display: inline;
+}
+
+.detail-title {
+    display: inline;
+}
+
+.icon {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sns {
+    color: dimgrey;
+}
+
+.github:hover {
+    color: black;
+}
