@@ -1,0 +1,13 @@
+<div class="container py-3">
+    {{#posts}}
+        <a href="/blog/posts/{{id}}" class="custom-card">
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{content}}</p>
+                    <p class="card-text mt-3 text-secondary">{{modifiedDate}}</p>
+                </div>
+            </div>
+        </a>
+    {{/posts}}
+</div>

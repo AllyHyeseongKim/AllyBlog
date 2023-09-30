@@ -1,4 +1,4 @@
-package com.allyhyeseongkim.blog.controller;
+package com.allyhyeseongkim.blog.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
