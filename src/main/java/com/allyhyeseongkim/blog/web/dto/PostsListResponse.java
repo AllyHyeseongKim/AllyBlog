@@ -10,18 +10,21 @@ import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class PostsResponse {
+public class PostsListResponse {
 
     private Long id;
     private String title;
     private String content;
-    private LocalDate modifiedDate;;
+    private LocalDate modifiedDate;
 
-
-    public PostsResponse(Posts entity) {
+    public PostsListResponse(Posts entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
         this.content = entity.getContent();
         this.modifiedDate = entity.getModifiedDate().toLocalDate();
+
+        if (entity.getContent().length() > 50) {
+            this.content = entity.getContent().substring(0, 50) + "...";
+        }
     }
 }

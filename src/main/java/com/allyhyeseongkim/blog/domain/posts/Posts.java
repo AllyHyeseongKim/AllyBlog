@@ -7,10 +7,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 @Getter
 @NoArgsConstructor
 @Entity
+@SQLDelete(sql = "UPDATE Posts SET deleted = true WHERE id = ?")
+@Where(clause = "deleted = false")
 public class Posts extends BaseTime {
 
     @Id
@@ -22,6 +26,8 @@ public class Posts extends BaseTime {
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
+
+    private boolean deleted = Boolean.FALSE;
 
     @Builder
     public Posts(String title, String content) {

@@ -82,3 +82,8 @@ a {
 .github:hover {
     color: black;
 }
+
+a.custom-card,
+a.custom-card:hover {
+    text-decoration: none;
+}

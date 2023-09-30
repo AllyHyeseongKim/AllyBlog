@@ -1,0 +1,21 @@
+{{>layout/header}}
+
+<div class="container d-flex pt-5">
+    <h3 class="mb-0 flex-grow-1">Modifying the post</h3>
+    <a href="/blog/posts/{{post.id}}" role="button" class="btn btn-dark me-2">cancel</a>
+    <button type="button" class="btn btn-outline-dark" id="btn-update">save</button>
+</div>
+
+<hr>
+<div class="container py-3">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">title</span>
+        <input type="text" class="form-control" id="title" value="{{post.title}}" aria-describedby="basic-addon3 basic-addon4">
+    </div>
+    <div class="mb-3">
+        <textarea class="form-control" placeholder="content" id="content" rows="30">{{post.content}}</textarea>
+    </div>
+</div>
+
+{{>layout/fnb}}
+{{>layout/blog-footer}}

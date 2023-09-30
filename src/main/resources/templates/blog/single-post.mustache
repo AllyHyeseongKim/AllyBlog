@@ -1,0 +1,18 @@
+{{>layout/header}}
+
+<div class="container d-flex pt-5">
+    <h3 class="mb-0 flex-grow-1">{{post.title}}</h3>
+    <button type="button" class="btn btn-danger me-2" id="btn-delete">delete</button>
+    <a href="/blog/posts/{{post.id}}/update" role="button" class="btn btn-outline-dark">modify</a>
+</div>
+
+<hr>
+<div class="container">
+    <p class="text-span text-italic">{{post.modifiedDate}}</p>
+</div>
+<div class="container py-3">
+    <p class="color-content">{{post.content}}</p>
+</div>
+
+{{>layout/fnb}}
+{{>layout/blog-footer}}
